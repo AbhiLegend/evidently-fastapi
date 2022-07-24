@@ -44,7 +44,7 @@ column_mapping.categorical_features = categorical_features
 regression_perfomance_dashboard = Dashboard(tabs=[RegressionPerformanceTab()])
 regression_perfomance_dashboard.calculate(reference, None, column_mapping=column_mapping)
 
-regression_perfomance_dashboard.save('/static/index.html')
+regression_perfomance_dashboard.save('./static/index.html')
 
 app = FastAPI()
 
